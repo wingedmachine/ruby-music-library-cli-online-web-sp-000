@@ -1,7 +1,7 @@
 class Genre
   attr_accessor :name, :songs
 
-  def genres
+  def artists
     @songs.map(&:artist).uniq
   end
 
