@@ -7,7 +7,7 @@ class Genre
   attr_accessor :name, :songs
 
   def artists
-    through_Songs_has_many(:artist)
+    through_songs_has_many(:artist)
   end
 
   @@all = []
