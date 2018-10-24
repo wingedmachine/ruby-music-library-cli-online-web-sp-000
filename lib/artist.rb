@@ -1,7 +1,7 @@
 class Artist
   extend Concerns::Findable
-  extend Concerns::HasManySongs
   extend Concerns::Trackable::ClassMethods
+  include Concerns::HasManySongs
   include Concerns::Trackable::InstanceMethods
 
   attr_accessor :name, :songs
