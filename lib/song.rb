@@ -1,14 +1,14 @@
 class Song
   attr_accessor :name
 
-  SONGS = []
+  @@all = []
 
   def self.all
-    SONGS
+    @@all
   end
 
   def self.destroy_all
-    SONGS.clear
+    @@all.clear
   end
 
   def initialize(name)
@@ -16,7 +16,7 @@ class Song
   end
 
   def save(song)
-    SONGS << song
+    @@all << song
   end
 
   def create(name)
