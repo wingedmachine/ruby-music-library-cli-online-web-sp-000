@@ -30,6 +30,7 @@ class Song
 
   def self.new_from_filename(filename)
     artist, name, genre = filename[0..-5].split(" - ")
+    binding.pry
     Song.new(name, artist, genre)
   end
 end
