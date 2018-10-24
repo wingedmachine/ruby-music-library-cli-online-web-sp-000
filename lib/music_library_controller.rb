@@ -18,4 +18,8 @@ class MusicLibraryController
       break if input == "exit"
     end
   end
+
+  def list_songs
+
+  end
 end
