@@ -1,6 +1,10 @@
 class Genre
   attr_accessor :name, :songs
 
+  def genres
+    @songs.map(&:artist).uniq
+  end
+
   @@all = []
 
   def self.all
