@@ -1,5 +1,7 @@
 class Artist
   extend Concerns::Findable
+  extend Concerns::Trackable::ClassMethods
+  include Concerns::Trackable::InstanceMethods
 
   attr_accessor :name, :songs
 
@@ -20,16 +22,6 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-  end
-
-  def save
-    @@all << self
-  end
-
-  def self.create(name)
-    artist = self.new(name)
-    artist.save
-    artist
   end
 
   def add_song(song)
