@@ -42,14 +42,15 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    sort_by_name(Genre.all).each_with_index do |genre, i|
-      puts "#{i+ 1}. #{genre.name}"
-    end
+    
+    # sort_by_name(Genre.all).each_with_index do |genre, i|
+    #   puts "#{i+ 1}. #{genre.name}"
+    # end
   end
 
   def list_songs_by_genre
-    sort_by_name(Genre.all).each_with_index do |genre, i|
-      puts "#{i+ 1}. #{genre.name}"
-    end
+    # sort_by_name(Genre.all).each_with_index do |genre, i|
+    #   puts "#{i+ 1}. #{genre.name}"
+    # end
   end
 end
