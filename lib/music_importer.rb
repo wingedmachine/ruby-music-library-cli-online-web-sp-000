@@ -6,6 +6,6 @@ class MusicImporter
   end
 
   def get_files_at(path)
-    Dir["#{path}/**.mp3"].map { |file| file.sub(path, "") }
+    Dir["#{path}/**.mp3"].map { |file| file.sub("#{path}/, "") }
   end
 end
