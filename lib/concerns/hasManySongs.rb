@@ -1,7 +1,7 @@
 module Concerns::HasManySongs
   def add_song(song)
     @songs << song unless @songs.include?(song)
-    song.send("genre") #||= self
+    song.genre = self
   end
 
   def through_Songs_has_many(objects)
