@@ -22,7 +22,7 @@ class Genre
   end
 
   def add_song(song)
-    @songs << song unless @songs.include?(song)
-    song.genre ||= self
+    # @songs << song unless @songs.include?(song)
+    # song.genre ||= self
   end
 end
