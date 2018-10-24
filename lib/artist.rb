@@ -8,7 +8,6 @@ class Artist
 
   def genres
     through_Songs_has_many(:genre)
-  #  @songs.map(&:genre).uniq
   end
 
   @@all = []
