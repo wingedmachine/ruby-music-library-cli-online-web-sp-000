@@ -19,8 +19,8 @@ class Song
   end
 
   def initialize(name, artist = nil, genre = nil)
-    3@name = name
-    self.artist = artist
+    @name = name
+    #self.artist = artist
     @genre = genre
   end
 
