@@ -68,7 +68,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.strip
     index = input.to_i - 1
-    if index
+    if index && index.between(0, @@song_list.length)
       song = @@song_list[index]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
