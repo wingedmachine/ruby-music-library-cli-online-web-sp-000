@@ -15,6 +15,11 @@ class Song
     @name = name
   end
 
-  def save(name)
-    SONGS << Song.new(name)
+  def save(song)
+    SONGS << song
+  end
+
+  def create(name)
+    save(Song.new(name))
+  end
 end
