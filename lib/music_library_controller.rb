@@ -58,7 +58,7 @@ class MusicLibraryController
     genre = Genre.find_by_name(input)
     if genre
       sort_by_name(genre.songs).each_with_index do |song, i|
-        puts "#{i+ 1}. #{song.name} - #{song.artist.name}"
+        puts "#{i+ 1}. #{song.artist.name} - #{song.name}"
       end
     end
     # sort_by_name(Genre.all).each_with_index do |genre, i|
