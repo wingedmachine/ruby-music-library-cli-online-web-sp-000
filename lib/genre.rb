@@ -18,7 +18,7 @@ class Genre
   end
 
   def add_song(song)
-    super
+    add_song(song, "genre")
     # song.genre ||= self
   end
 
