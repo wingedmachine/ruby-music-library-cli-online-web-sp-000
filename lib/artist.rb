@@ -1,5 +1,6 @@
 class Artist
   extend Concerns::Findable
+  extend Concerns::HasManySongs
   extend Concerns::Trackable::ClassMethods
   include Concerns::Trackable::InstanceMethods
 
