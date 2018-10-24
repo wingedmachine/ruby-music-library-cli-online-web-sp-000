@@ -4,7 +4,7 @@ module Concerns::HasManySongs
     # song.genre ||= self
   end
 
-  def through_Songs_has_many(objects)
+  def through_songs_has_many(objects)
     @songs.map(&objects).uniq
   end
 end
