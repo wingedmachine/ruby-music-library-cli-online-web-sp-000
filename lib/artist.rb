@@ -6,10 +6,10 @@ class Artist
 
   attr_accessor :name, :songs
 
-  ARISTS = []
+  @@all = []
 
   def self.all
-    ARISTS
+    @@all
   end
 
   def initialize(name)
