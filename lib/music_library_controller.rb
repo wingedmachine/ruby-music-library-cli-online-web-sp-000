@@ -42,8 +42,8 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    puts "Please enter the name of an artist:"
     loop do
+      puts "Please enter the name of an artist:"
       input = gets.strip
       break if (artist = Artist.find_by_name(input))
     binding.pry
