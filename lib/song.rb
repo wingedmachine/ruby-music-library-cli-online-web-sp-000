@@ -28,7 +28,7 @@ class Song
     self.genre = genre if genre
   end
 
-  def new_from_filename(filename)
+  def self.new_from_filename(filename)
     artist, name, genre = filename[0..-5].split(" - ")
     Song.new(name, artist, genre)
   end
