@@ -6,7 +6,7 @@ class Genre
   attr_accessor :name, :songs
 
   def artists
-    @songs.map(&:artist).uniq
+    through_Songs_has_many(:artist)
   end
 
   @@all = []
