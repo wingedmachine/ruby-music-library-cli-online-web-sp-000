@@ -16,6 +16,9 @@ class MusicLibraryController
     puts "What would you like to do?"
     loop do
       input = gets.strip
+      case input
+      when "list songs" then list_songs
+      end
       break if input == "exit"
     end
   end
