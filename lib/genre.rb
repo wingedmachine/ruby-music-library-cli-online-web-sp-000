@@ -21,8 +21,9 @@ class Genre
     @songs = []
   end
 
-  # def add_song(song)
-  #   # @songs << song unless @songs.include?(song)
-  #   # song.genre ||= self
-  # end
+  def add_song(song)
+    # @songs << song unless @songs.include?(song)
+    super
+    song.genre ||= self
+  end
 end
