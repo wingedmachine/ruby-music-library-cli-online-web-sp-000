@@ -27,7 +27,7 @@ class Artist
   end
 
   def add_song(song)
-    @songs << song
+    @songs << song unless @songs.keys.include?(song)
     song.artist ||= self
   end
 end
