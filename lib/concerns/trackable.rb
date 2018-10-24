@@ -1,7 +1,7 @@
 module Concerns::Trackable
   module ClassMethods
     def all
-      self.all
+      @@all
     end
 
     def destroy_all
