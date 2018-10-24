@@ -13,7 +13,7 @@ module Concerns::Trackable
 
   module InstanceMethods
     def save
-      self.all << self
+      self.class.all << self
     end
   end
 end
