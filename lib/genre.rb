@@ -22,7 +22,6 @@ class Genre
   end
 
   def add_song(song)
-    # @songs << song unless @songs.include?(song)
     super
     song.genre ||= self
   end
