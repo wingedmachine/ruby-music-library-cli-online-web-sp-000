@@ -18,7 +18,7 @@ class Artist
   end
 
   def add_song(song)
-    add_song(song, "artist")
+    super(song, "artist")
     # song.artist ||= self
   end
 
