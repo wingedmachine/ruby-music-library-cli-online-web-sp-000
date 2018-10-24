@@ -61,8 +61,9 @@ class MusicLibraryController
         puts "#{i+ 1}. #{song.artist.name} - #{song.name}"
       end
     end
-    # sort_by_name(Genre.all).each_with_index do |genre, i|
-    #   puts "#{i+ 1}. #{genre.name}"
-    # end
+  end
+
+  def play_song
+    
   end
 end
