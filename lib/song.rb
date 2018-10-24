@@ -16,7 +16,6 @@ class Song
     genre.add_song(self)
   end
 
-
   @@all = []
 
   def self.all
