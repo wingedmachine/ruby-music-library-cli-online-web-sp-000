@@ -1,5 +1,5 @@
-module Has_many_Songs
-  def has_many_through_Songs(objects)
+module HasManySongs
+  def through_Songs_has_many(objects)
     @songs.map(&objects).uniq
   end
 end
