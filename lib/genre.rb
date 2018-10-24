@@ -18,8 +18,8 @@ class Genre
   end
 
   def add_song(song)
-    add_song(song, "genre")
-    # song.genre ||= self
+    super #add_song(song, "genre")
+    song.genre ||= self
   end
 
   def artists
