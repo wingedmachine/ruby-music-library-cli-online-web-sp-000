@@ -25,4 +25,9 @@ class Genre
     genre.save
     genre
   end
+
+  def add_song(song)
+    @songs << song unless @songs.include?(song)
+    song.genre ||= self
+  end
 end
