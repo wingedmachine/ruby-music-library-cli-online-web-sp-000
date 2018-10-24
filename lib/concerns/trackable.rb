@@ -1,5 +1,13 @@
 module Concerns::Trackable
   module ClassMethods
+    def all
+      self.all
+    end
+
+    def destroy_all
+      self.all.clear
+    end
+
     def create(name)
       new_object = self.new(name)
       new_object.save
