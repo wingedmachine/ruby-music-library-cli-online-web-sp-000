@@ -1,7 +1,7 @@
 module Concerns::HasManySongs
-  def add_song(song)
+  def add_song(song, string)
     @songs << song unless @songs.include?(song)
-    song.send("artist=", self) unless song.send("artist")
+    song.send("#{string}=", self) unless song.send(string)
     # song.artist ||= self
   end
 
