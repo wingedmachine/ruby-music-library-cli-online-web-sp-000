@@ -22,6 +22,7 @@ class MusicLibraryController
       when "list genres" then list_genres
       when "list artist" then list_songs_by_artist
       when "list genre" then list_songs_by_genre
+      when "play song" then play_song
       end
       break if input == "exit"
     end
