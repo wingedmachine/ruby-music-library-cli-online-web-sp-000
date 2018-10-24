@@ -6,7 +6,6 @@ class MusicImporter
   end
 
   def get_files_at(path)
-    wert = Dir["#{path}/*.mp3"]
-    binding.pry
+    Dir["#{path}/**.mp3"]
   end
 end
