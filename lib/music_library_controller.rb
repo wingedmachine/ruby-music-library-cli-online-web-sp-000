@@ -25,4 +25,8 @@ class MusicLibraryController
       puts "#{i+ 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
   end
+
+  def list_artists
+    all_artists = Artist.all.sort { |artist1, artist2| artist1.name <=> artist2.name }
+  end
 end
