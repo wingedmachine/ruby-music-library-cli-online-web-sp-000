@@ -6,10 +6,6 @@ class Artist
 
   attr_accessor :name, :songs
 
-  def genres
-    through_songs_has_many(:genre)
-  end
-
   @@all = []
 
   def self.all
@@ -24,5 +20,9 @@ class Artist
   def add_song(song)
     super
     song.artist ||= self
+  end
+
+  def genres
+    through_songs_has_many(:genre)
   end
 end
