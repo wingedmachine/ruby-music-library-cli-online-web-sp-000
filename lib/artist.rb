@@ -4,7 +4,7 @@ class Artist
   include Concerns::HasManySongs
   include Concerns::Trackable::InstanceMethods
 
-  attr_accessor :name, :songs   
+  attr_accessor :name, :songs
 
   def genres
     through_Songs_has_many(:genre)
